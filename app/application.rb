@@ -7,7 +7,7 @@ class Application
 
 
     if req.path.match(param = /items/)
-    
+
       item_name = req.path.split("/items/").last
       binding.pry
       @@items.find do |i|
